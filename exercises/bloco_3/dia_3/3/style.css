@@ -2,6 +2,14 @@ h1, p {
   text-align: center;
 }
 
+ol, ul {
+  list-style: none;
+}
+
+li {
+  transition: 0.6s;
+}
+
 li:hover {
   background-color:bisque;
 }
@@ -9,3 +17,4 @@ li:hover {
 li:active {
   font-family: monospace;
 }
+
