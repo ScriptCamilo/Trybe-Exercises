@@ -1,15 +1,15 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // 1. Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log()
-for (i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
+for (index = 0; index < numbers.length; index++) {
+  console.log(numbers[index]);
 }
 console.log('')
 
 // 2. Para o segundo exercício, você deve somar todos os valores contidos no array e imprimir o resultado
 let soma = 0;
-for (i of numbers) {
-  soma += i;
+for (number of numbers) {
+  soma += number;
 }
 console.log(`A soma dos valores é: ${soma}`)
 console.log('')
@@ -33,9 +33,9 @@ console.log('')
 
 // 5. Utilizando for , descubra qual o maior valor contido no array e imprima-o;
 let maiorNumero = 0;
-for (i of numbers) {
-  if (maiorNumero < i) {
-    maiorNumero = i;
+for (number of numbers) {
+  if (maiorNumero < number) {
+    maiorNumero = number;
   }
 }
 console.log(`O maior número é: ${maiorNumero}`);
@@ -46,8 +46,8 @@ console.log('')
   Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado"
 */
 let imparesCount = 0;
-for (i of numbers) {
-  if (i % 2 !== 0) {
+for (number of numbers) {
+  if (number % 2 !== 0) {
     imparesCount++;
   }
 }
@@ -61,9 +61,9 @@ console.log('')
 
 // 7. Utilizando for , descubra qual o menor valor contido no array e imprima-o
 let menorNumero = 0;
-for (i in numbers) {
-  if (numbers[menorNumero] > numbers[i]) {
-    menorNumero = i;
+for (index in numbers) {
+  if (numbers[menorNumero] > numbers[index]) {
+    menorNumero = index;
   }
 }
 console.log(`O menor número é: ${numbers[menorNumero]}`)
@@ -71,8 +71,8 @@ console.log('')
 
 // 8. Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado
 // 9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2
-for (i = 1; i <= 25; i++) {
-  console.log(`Número: ${i}`)
-  console.log(`Divisão por 2: ${i/2}`) // 9
+for (count = 1; count <= 25; count++) {
+  console.log(`Número: ${count}`)
+  console.log(`Divisão por 2: ${count/2}`) // 9
   console.log('')
 }
