@@ -26,3 +26,12 @@ if (media > 20) {
 } else {
   console.log("Valor menor ou igual a 20")
 }
+
+// 5. Utilizando for , descubra qual o maior valor contido no array e imprima-o;
+let maiorNumero = 0;
+for (i of numbers) {
+  if (maiorNumero < i) {
+    maiorNumero = i;
+  }
+}
+console.log(`O maior número é: ${maiorNumero}`);
