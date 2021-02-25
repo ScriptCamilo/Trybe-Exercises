@@ -2,6 +2,10 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -17,8 +21,7 @@ section {
   height: 50px;
   text-align: center;
   width: 200px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin: auto;
 }
 
 .second {
@@ -27,7 +30,6 @@ section {
   height: 50px;
   text-align: center;
   width: 300px;
-  /* display: inline-block; */
 }
 
 .third {
@@ -36,9 +38,23 @@ section {
   height: 50px;
   text-align: center;
   width: 300px;
-  /* display: inline-block; */
 }
 
-#prizes li{
+.second, .third {
+  display: inline-block;
+}
+
+.li-group {
+  background-color: aqua;
+}
+
+#prizes ul {
+  background-color: cadetblue;
+  width: 50%;
+  margin: auto;
+}
+
+#prizes li {
   display: inline;
+  background-color: aqua;
 }
