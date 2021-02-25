@@ -35,3 +35,20 @@ for (i of numbers) {
   }
 }
 console.log(`O maior número é: ${maiorNumero}`);
+
+/*
+  6. Descubra quantos valores ímpares existem no array e imprima o resultado. 
+  Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado"
+*/
+let imparesCount = 0;
+for (i of numbers) {
+  if (i % 2 !== 0) {
+    imparesCount++;
+  }
+}
+
+if (imparesCount > 0) {
+  console.log(`A quantidade de números ímpar é: ${imparesCount}`)
+} else {
+  console.log("Nenhum valor ímpar foi encontrado")
+}
