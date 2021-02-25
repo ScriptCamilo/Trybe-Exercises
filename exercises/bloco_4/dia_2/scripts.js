@@ -63,6 +63,8 @@ for (i in numbers) {
 console.log(`O menor número é: ${numbers[menorNumero]}`)
 
 // 8. Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado
+// 9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2
 for (i = 1; i <= 25; i++) {
-  console.log(i)
+  console.log(`Número: ${i}`)
+  console.log(`Divisão: ${i/2}`) // 9
 }
