@@ -52,3 +52,12 @@ if (imparesCount > 0) {
 } else {
   console.log("Nenhum valor ímpar foi encontrado")
 }
+
+// 7. Utilizando for , descubra qual o menor valor contido no array e imprima-o
+let menorNumero = 0;
+for (i in numbers) {
+  if (numbers[menorNumero] > numbers[i]) {
+    menorNumero = i;
+  }
+}
+console.log(`O menor número é: ${numbers[menorNumero]}`)
