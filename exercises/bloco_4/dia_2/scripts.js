@@ -11,3 +11,12 @@ for (i of numbers) {
   soma += i;
 }
 console.log(`A soma dos valores é: ${soma}`)
+
+// 3. Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array
+let soma = 0;
+let media;
+for (i of numbers) {
+  soma += i;
+}
+media = soma/numbers.length
+console.log(`A média aritmética é: ${media}`)
