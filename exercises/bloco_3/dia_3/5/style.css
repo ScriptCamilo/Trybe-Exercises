@@ -49,3 +49,13 @@ li {
 li em {
   font-weight: bold;
 }
+
+ul#linguagens li:first-child,
+ul#linguagens li:nth-child(2),
+ul#linguagens li:nth-child(3) {
+  color: green;
+}
+
+.hasJava {
+  background-color: pink;
+}
