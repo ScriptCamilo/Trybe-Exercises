@@ -59,3 +59,31 @@ ul#linguagens li:nth-child(3) {
 .hasJava {
   background-color: pink;
 }
+
+#stackover:hover,
+#w3school:hover,
+#mozila:hover,
+#devdocs:hover,
+#trybe:hover {
+  font-weight: bold;
+}
+
+#stackover:hover {
+  color: orange;
+}
+
+#w3school:hover {
+  color: green;
+}
+
+#mozila:hover {
+  color: black;
+}
+
+#devdocs:hover {
+  color: rgb(151, 151, 15);
+}
+
+#trybe:hover {
+  color: green;
+}
