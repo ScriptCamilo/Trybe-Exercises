@@ -77,7 +77,7 @@ for (count = 1; count <= 25; count++) {
   console.log('');
 }
 
-// BONUS
+// BÔNUS
 // 1. Ordene o array numbers em ordem crescente e imprima seus valores
 let bonusNumbers = numbers.slice();
 
