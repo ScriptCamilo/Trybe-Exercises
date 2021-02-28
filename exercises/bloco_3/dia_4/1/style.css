@@ -1,0 +1,60 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section {
+  background-color: blanchedalmond;
+}
+
+.first {
+  background-color: rgb(235, 200, 84);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+  margin: auto;
+}
+
+.second {
+  background-color: rgb(219, 219, 219);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+}
+
+.third {
+  background-color: rgb(170, 142, 106);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+}
+
+.second, .third {
+  display: inline-block;
+}
+
+.li-group {
+  background-color: aqua;
+}
+
+#prizes ul {
+  background-color: cadetblue;
+  width: 50%;
+  margin: auto;
+}
+
+#prizes li {
+  display: inline;
+  background-color: aqua;
+}
