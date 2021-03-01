@@ -33,3 +33,20 @@ console.log(highestNumber([2, 3, 6, 7, 10, 1]));
 console.log();
 
 // 3.
+function smallestNumber(array) {
+  let smallest = null;
+
+  for (let index in array) {
+    if (smallest === null) {
+      smallest = index;
+    } else if (smallest > array[index]) {
+      smallest = index;
+    }
+  }
+  return smallest;
+}
+
+console.log(smallestNumber([2, 4, 6, 7, 10, 0, -3]));
+console.log();
+
+// 4.
