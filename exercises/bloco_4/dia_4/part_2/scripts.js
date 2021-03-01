@@ -1,6 +1,6 @@
 // 1.
 function isPalindrome(words) {
-  words = words.split(' ').join('').toLowerCase()
+  words = words.split(' ').join('').toLowerCase();
   let reversedWords = words.split('').reverse().join('');
 
   if (words === reversedWords) {
@@ -48,3 +48,20 @@ console.log(smallestNumber([2, 4, 6, 7, 10, 0, -3]));
 console.log();
 
 // 4.
+function moreCharacters(array) {
+  let more = null;
+
+  for (let index in array) {
+    if (more === null) {
+      more = array[index];
+    } else if (more.length < array[index].length) {
+      more = array[index];
+    } 
+  }
+  return more;
+}
+
+console.log(moreCharacters(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+console.log();
+
+// 5.
