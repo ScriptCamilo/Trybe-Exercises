@@ -12,14 +12,28 @@
 let firstNumber = 8;
 let secondNumber = 5;
 
-let sum = firstNumber + secondNumber;
-let difference = firstNumber - secondNumber;
-let product = firstNumber * secondNumber;
-let quotient = firstNumber / secondNumber;
-let modulo = firstNumber % secondNumber;
+function sum(x, y) {
+  return x+y;
+}
 
-console.log(`Sum: ${sum}`);
-console.log(`Difference: ${difference}`);
-console.log(`Product: ${product}`);
-console.log(`Quotient: ${quotient}`);
-console.log(`Modulo: ${modulo}`);
+function difference(x, y) {
+  return x-y;
+}
+
+function product(x, y) {
+  return x*y;
+}
+
+function quotient(x, y) {
+  return x/y;
+}
+
+function modulo(x, y) {
+  return x%y;
+}
+
+console.log(`Sum: ${sum(firstNumber, secondNumber)}`);
+console.log(`Difference: ${difference(firstNumber, secondNumber)}`);
+console.log(`Product: ${product(firstNumber, secondNumber)}`);
+console.log(`Quotient: ${quotient(firstNumber, secondNumber)}`);
+console.log(`Modulo: ${modulo(firstNumber, secondNumber)}`);
