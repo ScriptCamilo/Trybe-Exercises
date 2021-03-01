@@ -22,9 +22,7 @@ function highestNumber(array) {
       highest = index;
     } else if (highest < array[index]) {
       highest = index;
-    } else {
-      continue;
-    }
+    } 
   }
   return highest;
 }
