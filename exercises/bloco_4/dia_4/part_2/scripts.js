@@ -14,22 +14,22 @@ console.log(isPalindrome('Arara'));
 console.log();
 
 // 2.
-function greaterNumber(array) {
-  let greater = null;
+function highestNumber(array) {
+  let highest = null;
 
   for (let index in array) {
-    if (greater === null) {
-      greater = index;
-    } else if (greater < array[index]) {
-      greater = index;
+    if (highest === null) {
+      highest = index;
+    } else if (highest < array[index]) {
+      highest = index;
     } else {
       continue;
     }
   }
-  return greater;
+  return highest;
 }
 
-console.log(greaterNumber([2, 3, 6, 7, 10, 1]));
+console.log(highestNumber([2, 3, 6, 7, 10, 1]));
 console.log();
 
 // 3.
