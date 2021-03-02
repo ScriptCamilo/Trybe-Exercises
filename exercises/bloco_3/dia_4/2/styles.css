@@ -7,7 +7,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 
@@ -53,6 +52,7 @@ a {
 #page_content {
   padding-top: 100px;
   padding-bottom: 5rem;
+  line-height: 1.6rem;
 }
 
 #page_content header h1{
@@ -68,14 +68,13 @@ a {
 }
 
 #page_content section#general figure {
-  width: 100%;
-  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 #page_content section#general img {
   width: 560px;
   height: 315px;
-  float: left;
 }
 
 .icon {
