@@ -65,3 +65,28 @@ console.log(moreCharacters(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Jo
 console.log();
 
 // 5.
+function repeatedNumber(array) {
+  let moreRepeated = null;
+  let count = 0;
+  for (let index of array) {
+    let aux = 0;
+
+    for (let repeatIndex = 0; repeatIndex < array.length; repeatIndex += 1) {
+      if (index === array[repeatIndex]) {
+        aux += 1;
+      }
+    }
+
+    if (moreRepeated === null) {
+      moreRepeated = index;
+    } else if (aux > count) {
+      moreRepeated = index;
+      count = aux;
+    }
+  }
+  return moreRepeated;
+}
+
+console.log(repeatedNumber([2, 3, 2, 5, 8, 2, 3]));
+
+// 6.
