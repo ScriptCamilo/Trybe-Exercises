@@ -88,5 +88,18 @@ function repeatedNumber(array) {
 }
 
 console.log(repeatedNumber([2, 3, 2, 5, 8, 2, 3]));
+console.log();
 
 // 6.
+function beforeNumberSum(number) {
+  let sum = 0;
+  for (let index = 1; index <= number; index += 1) {
+    sum += index;
+  }
+  return sum;
+}
+
+console.log(beforeNumberSum(5));
+console.log();
+
+// 7.
