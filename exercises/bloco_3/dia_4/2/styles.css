@@ -1,21 +1,90 @@
+/* rgb(46, 15, 21) */
+/* rgb(112, 22, 60) */
+/* rgb(61, 117, 132) */
+/* rgb(48, 115, 81) */
+/* rgb(149, 178, 184) */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
 footer {
+  background-color: rgb(149, 178, 184);
   width: 100%;
+  height: 5.5rem;
   text-align: center;
-  margin: auto;
-  right: 0;
+  position: absolute;
   bottom: 0;
-  padding: 10px;
+  left: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+#main_header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(61, 117, 132);
+}
+
+#main_header h1 {
+  text-align: center;
+  color: white;
+}
+
+#main_header li {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+#main_header a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#page_content {
+  padding-top: 100px;
+  padding-bottom: 5rem;
+}
+
+#page_content header h1{
+  text-align: center;
+  color: rgb(61, 117, 132);
+  padding: 10px;
+}
+
+#page_content article#about {
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+}
+
+#page_content section#general figure {
+  width: 100%;
+  margin: auto;
+}
+
+#page_content section#general img {
+  width: 560px;
+  height: 315px;
+  float: left;
+}
+
 .icon {
   width: 30px;
   height: 30px;
+  padding: 10px;
 }
 
 #copy {
   font-size: 14px;
+  padding: 10px;
 }
