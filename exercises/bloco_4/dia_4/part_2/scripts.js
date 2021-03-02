@@ -103,3 +103,16 @@ console.log(beforeNumberSum(5));
 console.log();
 
 // 7.
+function isEndingOfWord(word, ending) {
+  let aux = '';
+  for (let index = (word.length - ending.length); index < word.length; index += 1) {
+    aux += word[index];
+  }
+  if (ending === aux) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isEndingOfWord('Churrasco', 'sco'));
