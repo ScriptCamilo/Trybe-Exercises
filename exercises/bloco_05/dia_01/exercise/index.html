@@ -44,7 +44,7 @@
       let mainBackground = document.getElementsByClassName('main-content')[0];
       let centerBackground = document.getElementsByClassName('center-content')[0];
       let mainTitle = document.getElementsByTagName('h1')[0];
-      let paragraphToUpper = document.getElementsByTagName('p');
+      let paragraph = document.getElementsByTagName('p');
       
       mainText.innerHTML = (
         'Eu me vejo viajando pelo mundo e trabalhando remotamente em alguma das empresas que mais tenho \
@@ -59,9 +59,14 @@
 
       mainTitle.innerText = 'Exercício 5.1 - JavaScript';
       
-      for (let index = 0; index < paragraphToUpper.length; index += 1) {
-        let text = paragraphToUpper[index].innerHTML;
-        paragraphToUpper[index].innerHTML = text.toUpperCase();
+      for (let index = 0; index < paragraph.length; index += 1) {
+        let text = paragraph[index].innerHTML;
+        paragraph[index].innerHTML = text.toUpperCase();
+      }
+
+      for (let index = 0; index < paragraph.length; index += 1) {
+        let text = paragraph[index].innerText;
+        console.log(text);
       }
     </script>
   </body>
