@@ -62,6 +62,11 @@
       centerBackground.style.padding = '10px';
 
       mainTitle.innerText = 'Exercício 5.1 - JavaScript';
+      
+      for (let index = 0; index < paragraphToUpper.length; index += 1) {
+        let text = paragraphToUpper[index].innerHTML;
+        paragraphToUpper[index].innerHTML = text.toUpperCase();
+      }
     </script>
   </body>
 </html>
