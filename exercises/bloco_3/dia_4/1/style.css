@@ -2,17 +2,13 @@ h1 {
   text-align: center;
 }
 
-h3 {
+h2 {
   text-align: center;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-}
-
-section {
-  background-color: blanchedalmond;
 }
 
 .first {
@@ -45,16 +41,14 @@ section {
 }
 
 .li-group {
-  background-color: aqua;
-}
-
-#prizes ul {
-  background-color: cadetblue;
-  width: 50%;
   margin: auto;
+  width: 604px;
 }
 
 #prizes li {
   display: inline;
-  background-color: aqua;
+}
+
+#prizes .li-group {
+  width: 625px;
 }
