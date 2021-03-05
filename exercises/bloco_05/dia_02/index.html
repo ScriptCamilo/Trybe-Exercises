@@ -101,6 +101,11 @@
       rightContent.appendChild(unorderedList);
       mainContent.removeChild(leftContent);
       centerContent.parentElement.style.backgroundColor = 'green';
+
+      let unorderedListCount = unorderedList.children.length;
+      for (let index = unorderedList.children.length - 1; index > unorderedListCount - 3; index -= 1) {
+        unorderedList.removeChild(unorderedList.children[index]);
+      }
     </script>
   </body>
 </html>
