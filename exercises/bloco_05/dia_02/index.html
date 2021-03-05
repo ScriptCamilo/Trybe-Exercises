@@ -61,14 +61,17 @@
       let title = document.createElement('h1');
       let mainContent = document.createElement('div');
       let centerContent = document.createElement('div');
+      let paragraph = document.createElement('p');
 
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
       mainContent.classList.add('main-content');
       centerContent.classList.add('center-content');
+      paragraph.innerText = 'É gratificante sentir sua própria evolução!'
       
       body.appendChild(title);
       body.appendChild(mainContent);
       mainContent.appendChild(centerContent);
+      centerContent.appendChild(paragraph);
     </script>
   </body>
 </html>
