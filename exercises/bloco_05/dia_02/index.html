@@ -82,6 +82,11 @@
         list.innerText = numbersList[index];
         unorderedList.appendChild(list);
       }
+
+      for (let index = 0; index < 3; index += 1) {
+        let heading3 = document.createElement('h3');
+        mainContent.appendChild(heading3);
+      }
       
       body.appendChild(title);
       body.appendChild(mainContent);
