@@ -65,6 +65,8 @@
       let leftContent = document.createElement('div');
       let rightContent = document.createElement('div');
       let image = document.createElement('img');
+      let unorderedList = document.createElement('ul');
+      let numbersList = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
 
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
       mainContent.classList.add('main-content');
@@ -73,7 +75,13 @@
       leftContent.classList.add('left-content');
       rightContent.classList.add('right-content');
       image.classList.add('small-image');
-      image.src = 'https://picsum.photos/200'
+      image.src = 'https://picsum.photos/200';
+      
+      for (let index = 0; index < numbersList.length; index += 1) {
+        let list = document.createElement('li');
+        list.innerText = numbersList[index];
+        unorderedList.appendChild(list);
+      }
       
       body.appendChild(title);
       body.appendChild(mainContent);
@@ -82,6 +90,7 @@
       mainContent.appendChild(leftContent);
       mainContent.appendChild(rightContent);
       leftContent.appendChild(image);
+      rightContent.appendChild(unorderedList);
     </script>
   </body>
 </html>
