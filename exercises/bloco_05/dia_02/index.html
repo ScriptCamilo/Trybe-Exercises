@@ -62,16 +62,26 @@
       let mainContent = document.createElement('div');
       let centerContent = document.createElement('div');
       let paragraph = document.createElement('p');
+      let leftContent = document.createElement('div');
+      let rightContent = document.createElement('div');
+      let image = document.createElement('img');
 
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
       mainContent.classList.add('main-content');
       centerContent.classList.add('center-content');
-      paragraph.innerText = 'É gratificante sentir sua própria evolução!'
+      paragraph.innerText = 'É gratificante sentir sua própria evolução!';
+      leftContent.classList.add('left-content');
+      rightContent.classList.add('right-content');
+      image.classList.add('small-image');
+      image.src = 'https://picsum.photos/200'
       
       body.appendChild(title);
       body.appendChild(mainContent);
       mainContent.appendChild(centerContent);
       centerContent.appendChild(paragraph);
+      mainContent.appendChild(leftContent);
+      mainContent.appendChild(rightContent);
+      leftContent.appendChild(image);
     </script>
   </body>
 </html>
