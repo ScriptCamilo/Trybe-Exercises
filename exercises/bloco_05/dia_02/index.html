@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let body = document.querySelector('body');
+      let title = document.createElement('h1');
+      let mainContent = document.createElement('div');
+      let centerContent = document.createElement('div');
+      let paragraph = document.createElement('p');
+      let leftContent = document.createElement('div');
+      let rightContent = document.createElement('div');
+      let image = document.createElement('img');
+      let unorderedList = document.createElement('ul');
+      let numbersList = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+
+      title.innerText = 'Exercício 5.2 - JavaScript DOM';
+      title.classList.add('title');
+      mainContent.classList.add('main-content');
+      centerContent.classList.add('center-content');
+      paragraph.innerText = 'É gratificante sentir sua própria evolução!';
+      leftContent.classList.add('left-content');
+      rightContent.classList.add('right-content');
+      rightContent.style.marginRight = 'auto';
+      image.classList.add('small-image');
+      image.src = 'https://picsum.photos/200';
+      
+      for (let index = 0; index < numbersList.length; index += 1) {
+        let list = document.createElement('li');
+        list.innerText = numbersList[index];
+        unorderedList.appendChild(list);
+      }
+
+      for (let index = 0; index < 3; index += 1) {
+        let heading3 = document.createElement('h3');
+        heading3.classList.add('description');
+        mainContent.appendChild(heading3);
+      }
+      
+      body.appendChild(title);
+      body.appendChild(mainContent);
+      mainContent.appendChild(centerContent);
+      centerContent.appendChild(paragraph);
+      mainContent.appendChild(leftContent);
+      mainContent.appendChild(rightContent);
+      leftContent.appendChild(image);
+      rightContent.appendChild(unorderedList);
+      mainContent.removeChild(leftContent);
+      centerContent.parentElement.style.backgroundColor = 'green';
+
+      let unorderedListCount = unorderedList.children.length;
+      for (let index = unorderedList.children.length - 1; index > unorderedListCount - 3; index -= 1) {
+        unorderedList.removeChild(unorderedList.children[index]);
+      }
+    </script>
+  </body>
+</html>
