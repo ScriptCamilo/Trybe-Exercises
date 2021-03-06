@@ -48,3 +48,20 @@ function holidayButton(date) {
 }
 
 holidayButton();
+
+function holidayColor() {
+  let holidayList = document.querySelectorAll('.holiday');
+  
+  for (let index = 0; index < holidayList.length; index += 1){
+    let holiday = holidayList[index];
+    if (holiday.style.color === 'green') {
+      holiday.style.color = '#777';
+      holiday.style.fontWeight = 'normal';
+    } else {
+        holiday.style.color = 'green';
+        holiday.style.fontWeight = 'bold';
+    }
+  }
+}
+
+document.querySelector('#btn-holiday').addEventListener('click', holidayColor);
