@@ -39,15 +39,15 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth();
 
-function holidayButton(date) {
+function holidayButton(holiday) {
   let holidayBtn = document.createElement('button');
-  holidayBtn.innerText = 'Feriados';
+  holidayBtn.innerText = holiday;
   holidayBtn.id = 'btn-holiday';
 
   document.querySelector('.buttons-container').appendChild(holidayBtn);
 }
 
-holidayButton();
+holidayButton('Holidays');
 
 function holidayColor() {
   let holidayList = document.querySelectorAll('.holiday');
@@ -65,3 +65,12 @@ function holidayColor() {
 }
 
 document.querySelector('#btn-holiday').addEventListener('click', holidayColor);
+
+function fridayButton(friday) {
+  let fridayBtn = document.createElement('button');
+  fridayBtn.innerText = friday;
+  fridayButton.id = 'btn-friday';
+
+  document.querySelector('.buttons-container').appendChild(fridayBtn)
+}
+fridayButton('Fridays');
