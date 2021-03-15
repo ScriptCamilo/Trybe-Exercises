@@ -10,8 +10,59 @@
   <header>
     <h1>FORMULÁRIO</h1>
   </header>
-  <form action="">
-   
+
+  <form>
+   <fieldset>
+     <legend>Dados Pessoais</legend>
+     <label for="name-input">Nome: 
+       <input type="text" name="name" id="name-input" maxlength="40" required>
+     </label>
+     <br><br>
+
+     <label for="email-input">E-mail: 
+      <input type="text" name="email" id="email-input" maxlength="50" required>
+    </label>
+    <br><br>
+
+    <label for="name-input">CPF: 
+      <input type="text" name="cpf" id="cpf-input" maxlength="11" required>
+    </label>
+    <br><br>
+
+    <label for="address-input">Endereço: 
+      <input type="text" name="address" id="address-input" maxlength="200" required>
+    </label>
+    <br><br>
+
+    <label for="city-input">Cidade: 
+      <input type="text" name="city" id="city-input" maxlength="28" required>
+    </label>
+    <br><br>
+
+    <label for="select-state">Estado:
+      <select name="states" id="select-state" required></select>
+    </label>
+    <br><br>
+
+    <label for="casa-input">
+      <input type="radio" name="local" id="casa-input">Casa
+    </label>
+    <label for="apt-input">
+      <input type="radio" name="local" id="apt-input">Apartamento
+    </label>
+   </fieldset>
+
+   <fieldset>
+     <legend>Emprego</legend>
+
+     <label for="resume">
+       <textarea name="resume" id="resume-textarea" cols="30" rows="10" placeholder="Resumo do currículo" maxlength="1000"></textarea>
+     </label>
+
+     <label for=""></label>
+   </fieldset>
   </form>
+
+  <script src="./script.js"></script>
 </body>
 </html>
