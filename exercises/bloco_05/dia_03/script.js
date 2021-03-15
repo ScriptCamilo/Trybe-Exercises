@@ -63,14 +63,39 @@ function holidayColor() {
     }
   }
 }
-
 document.querySelector('#btn-holiday').addEventListener('click', holidayColor);
 
 function fridayButton(friday) {
   let fridayBtn = document.createElement('button');
   fridayBtn.innerText = friday;
-  fridayButton.id = 'btn-friday';
+  fridayBtn.id = 'btn-friday';
 
   document.querySelector('.buttons-container').appendChild(fridayBtn)
 }
 fridayButton('Fridays');
+
+function fridayColor() {
+  let fridayList = document.querySelectorAll('.friday');
+  
+  for (let index = 0; index < fridayList.length; index += 1){
+    let friday = fridayList[index];
+    if (friday.style.color === 'red') {
+      friday.style.color = '#777';
+      friday.style.fontWeight = 'normal';
+    } else {
+        friday.style.color = 'red';
+        friday.style.fontWeight = 'bold';
+    }
+  }
+}
+document.querySelector('#btn-friday').addEventListener('click', fridayColor);
+
+function dayZoom(event) {
+  if (event.target.style.fontSize === '2rem') {
+    event.target.style.fontSize = '10px';
+  }
+  event.target.style.fontSize = '2rem';
+}
+
+document.querySelector('.day').addEventListener('mouseover', dayZoom);
+document.querySelector('.day').addEventListener('mouseout', dayZoom);
