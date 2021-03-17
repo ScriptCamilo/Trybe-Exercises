@@ -39,6 +39,17 @@ function createStateOption() {
   }
 }
 
+function buttonEvent(event) {
+  // event.preventDefault();
+}
+
+function formEvents() {
+  const submitButton = document.querySelector('#submit-button');
+
+  submitButton.addEventListener('click', buttonEvent)
+}
+
 window.onload = () => {
   createStateOption();
+  formEvents();
 }

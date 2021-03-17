@@ -20,7 +20,7 @@
      <br><br>
 
      <label for="email-input">E-mail: 
-      <input type="text" name="email" id="email-input" maxlength="50" required>
+      <input type="email" name="email" id="email-input" maxlength="50" required>
     </label>
     <br><br>
 
@@ -43,12 +43,13 @@
       <select name="states" id="select-state" required></select>
     </label>
     <br><br>
-
+    
+    <!-- Testar o bagui do required -->
     <label for="casa-input">
-      <input type="radio" name="local" id="casa-input">Casa
+      <input type="radio" name="local" id="casa-input" required>Casa
     </label>
     <label for="apt-input">
-      <input type="radio" name="local" id="apt-input">Apartamento
+      <input type="radio" name="local" id="apt-input" required>Apartamento
     </label>
    </fieldset>
 
@@ -56,11 +57,42 @@
      <legend>Emprego</legend>
 
      <label for="resume">
-       <textarea name="resume" id="resume-textarea" cols="30" rows="10" placeholder="Resumo do currículo" maxlength="1000"></textarea>
+       <textarea 
+       name="resume"
+       id="resume-textarea"
+       cols="30"
+       rows="10"
+       placeholder="Resumo do currículo"
+       maxlength="1000"
+       required
+      ></textarea>
      </label>
+     <br><br>
 
-     <label for=""></label>
+     <label for="job">Cargo: 
+       <input type="text" name="job" id="job-input" maxlength="40" required>
+     </label>
+     <br><br>
+
+     <label for="description">
+       <textarea
+        name="description"
+        id="description-input"
+        cols="30"
+        rows="10"
+        placeholder="Descrição do cargo"
+        maxlength="500" 
+        required
+      ></textarea>
+     </label>
+     <br><br>
+
+     <label for="date"> Data de início: 
+       <input type="date" name="date" id="date-input" required>
+     </label>
    </fieldset>
+
+   <button type="submit" id="submit-button">Submit</button>
   </form>
 
   <script src="./script.js"></script>
