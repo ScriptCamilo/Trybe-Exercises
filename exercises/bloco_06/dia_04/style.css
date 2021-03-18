@@ -46,11 +46,13 @@ body {
 .main-container {
   display: flex;
   flex-wrap: wrap;
+  border: 2px solid blue;
 }
 
 .movie-container {
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 }
 
 .movie-container h2 {
@@ -62,6 +64,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  border: 1px solid green;
 }
 
 .card-container div {
@@ -77,8 +80,11 @@ body {
 .aside-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-basis: 350px;
+  flex-grow: 1;
   margin: 20px;
+  border: 1px solid black;
 }
 
 .aside-container h3, h4 {
