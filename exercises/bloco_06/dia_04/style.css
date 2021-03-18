@@ -63,6 +63,7 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 700px;
   justify-content: space-around;
   border: 1px solid green;
 }
@@ -72,6 +73,7 @@ body {
   background-color: #5C687C;
   border: black solid 1px;
   display: flex;
+  flex-basis: 16%;
   height: 150px;
   justify-content: center;
   margin: 10px;
