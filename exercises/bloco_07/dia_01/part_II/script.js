@@ -1,7 +1,7 @@
 // First exercise
 const fatorial = (n) => (n <= 1) ? 1 : n * fatorial(n - 1);
 
-// console.log(fatorial(5));
+console.log(fatorial(5));
 
 // Second exercise
 const longestWord = (setence) => {
@@ -16,7 +16,7 @@ const longestWord = (setence) => {
   return mainWord;
 };
 
-// console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
 
 // Third exercise
 const clickCount = () => {
@@ -27,3 +27,12 @@ const clickCount = () => {
 
 const clickButton = document.querySelector('button');
 clickButton.addEventListener('click', clickCount);
+
+// Fourth exercise
+const skills = ['Organização', 'JavaScript', 'Python'];
+
+const findX = word => `Trybe x aqui!`.replace('x', word);
+console.log(findX('Bebeto'));
+
+const concat = string => `${string} Minhas três principais habilidades são: ${skills}`
+console.log(concat(findX('Bebeto')));
