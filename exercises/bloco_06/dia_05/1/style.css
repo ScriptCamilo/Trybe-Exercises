@@ -20,12 +20,18 @@ figure {
     margin: 0 0 40px ;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
 #content-container {
   display: flex;
   flex-direction: column;
   max-width: 1480px;
   margin: auto;
-  border: 1px solid blue;
+  padding: 10px;
 }
 
 @media screen and (min-width: 800px) {
@@ -47,7 +53,6 @@ figure {
 
   figure {
     margin: 0 0 30px;
-    border: 1px solid red;
     width: 370px;
   }
 
@@ -77,13 +82,11 @@ figure {
 
   figure {
     margin: 0 0 30px;
-    border: 1px solid red;
     width: 370px;
   }
 
   #content-container {
     max-width: 1503;
-    border: 1px solid blue;
   }
 
   .images {
