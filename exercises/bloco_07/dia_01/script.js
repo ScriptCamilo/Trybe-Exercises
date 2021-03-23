@@ -13,9 +13,7 @@ testingScope(true);
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-const crescentOrder = () => {
-  oddsAndEvens.sort((a, b) => a - b);
-}
+const crescentOrder = () => oddsAndEvens.sort((a, b) => a - b);
 
 crescentOrder();
 
