@@ -49,3 +49,13 @@ const getValueByNumber = (lesson, index) => {
   const objList = Object.values(lesson);
   return objList[index];
 }
+
+// 8
+const verifyPair = (lesson, key, value) => {
+  if (lesson.hasOwnProperty(key)) {
+    if (lesson[key] === value) {
+      return true
+    }
+  }
+  return false;
+}
