@@ -59,3 +59,21 @@ const verifyPair = (lesson, key, value) => {
   }
   return false;
 }
+
+// Bonus
+const createReport = (lessons, teacher) => {
+  const report = {
+    professor: null,
+    aulas: [],
+    estudantes: 0
+  }
+
+  for (let index in lessons) {
+    if (lessons[index].professor === teacher) {
+      report.professor = teacher;
+      report.aulas.push(lessons[index].materia);
+      report.estudantes += lessons[index].numeroEstudantes;
+    }
+  }
+  return report;
+}
