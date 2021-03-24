@@ -43,3 +43,9 @@ const allStudents = lessons => {
   return studentCount;
 }
 allStudents(allLessons);
+
+// 7
+const getValueByNumber = (lesson, index) => {
+  const objList = Object.values(lesson);
+  return objList[index];
+}
