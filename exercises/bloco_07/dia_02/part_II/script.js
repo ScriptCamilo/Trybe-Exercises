@@ -19,9 +19,7 @@ const lesson3 = {
 };
 
 // 1
-const addEntry = (lesson, newKey, value) => {
-  lesson[newKey] = value;
-}
+const addEntry = (lesson, newKey, value) => lesson[newKey] = value;
 addEntry(lesson2, 'turno', 'tarde');
 
 // 2
@@ -32,3 +30,16 @@ const objLenght = lesson => Object.keys(lesson).length;
 
 // 4
 const listValues = lesson => Object.values(lesson);
+
+// 5
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
+// 6
+const allStudents = lessons => {
+  let studentCount = 0;
+  for (let index in lessons) {
+    studentCount += lessons[index].numeroEstudantes;
+  }
+  return studentCount;
+}
+allStudents(allLessons);
