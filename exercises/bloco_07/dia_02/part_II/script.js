@@ -24,3 +24,5 @@ const addEntry = (lesson, newKey, value) => {
 addEntry(lesson2, 'turno', 'tarde');
 
 const listKeys = lesson => Object.keys(lesson);
+
+const objLenght = lesson => Object.keys(lesson).length;
