@@ -31,7 +31,7 @@ const mageDamage = () => {
   const mana = (mage.mana > 15) ? mage.mana - 15 : mage.mana;
 
   if (mana === mage.mana) {
-    return 'Não possui mana suficiente';
+    return { damage: 'Not enough mana...', mana: 0};
   }
   return { damage, mana }
 }
@@ -53,9 +53,7 @@ const gameActions = {
     warrior.healthPoints -= dragon.damage;
     mage.healthPoints -= dragon.damage;
   },
-  update: () => {
-    return battleMembers;
-  }
+  update: () => battleMembers,
 };
 
 gameActions.warriorAction(warriorDamage);
