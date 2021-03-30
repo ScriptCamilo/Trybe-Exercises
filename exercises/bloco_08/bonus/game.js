@@ -56,7 +56,18 @@ const gameActions = {
   update: () => battleMembers,
 };
 
-gameActions.warriorAction(warriorDamage);
-gameActions.mageAction(mageDamage);
-gameActions.dragonAction(dragonDamage);
-console.log(gameActions.update());
+const battle = () => {
+  while (dragon.healthPoints > 0 || (mage.healthPoints > 0 && warrior.healthPoints > 0)) {
+    gameActions.warriorAction(warriorDamage);
+    gameActions.mageAction(mageDamage);
+    gameActions.dragonAction(dragonDamage);
+    console.log(gameActions.update());
+  }
+  if (dragon.healthPoints < 0) {
+    console.log('Congrats, you killed the dragon!')
+  } else {
+    console.log('Game Over!');
+  }
+};
+
+battle();
